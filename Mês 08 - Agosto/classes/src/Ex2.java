@@ -3,7 +3,7 @@ public class Ex2 {
     public static void main(String[] args) {
         Mercado unidadeJoinville = new Mercado();
 
-      
+
         unidadeJoinville.nomeMercado = "Giassi";
         unidadeJoinville.macasVendidas = 700;
         unidadeJoinville.precoMaca = 2;
