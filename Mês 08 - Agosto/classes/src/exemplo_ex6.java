@@ -1,33 +1,18 @@
-public class Mercado1 {
+public class exemplo_ex6 {
 
     public static void main(String[] args) {
 
-        Mercado unidadeJoinville = new Mercado();
-        unidadeJoinville.nomeMercado = "Giassi";
-        unidadeJoinville.macasVendidas = 500;
-        unidadeJoinville.precoMaca = 2;
-        unidadeJoinville.laranjasVendidas = 400;
-        unidadeJoinville.precoLaranja = 2.5;
+        Exemplo unidadeJoinville = new Exemplo("Giassi",500,2,400,2.5);
 
-        Mercado unidadeBlumenau = new Mercado();
-        unidadeBlumenau.nomeMercado = "Angeloni";
-        unidadeBlumenau.macasVendidas = 450;
-        unidadeBlumenau.precoMaca = 1.8;
-        unidadeBlumenau.laranjasVendidas = 420;
-        unidadeBlumenau.precoLaranja = 2.2;
+        Exemplo unidadeBlumenau = new Exemplo("Angeloni",450,1.8,420,2.2);
 
-        Mercado unidadeFlorianopolis = new Mercado();
-        unidadeFlorianopolis.nomeMercado = "Fort";
-        unidadeFlorianopolis.macasVendidas = 500;
-        unidadeFlorianopolis.precoMaca = 2;
-        unidadeFlorianopolis.laranjasVendidas = 470;
-        unidadeFlorianopolis.precoLaranja = 2.4;
+        Exemplo unidadeFlorianopolis = new Exemplo ("Fort",500,2,470,2.4);
 
-        Mercado mercados[] = { unidadeBlumenau, unidadeFlorianopolis, unidadeJoinville };
+        Exemplo mercados[] = { unidadeBlumenau, unidadeFlorianopolis, unidadeJoinville };
 
         double maiorReceitaMacas = 0;
 
-        Mercado mercadoMaiorReceitaMacas = null;
+        Exemplo mercadoMaiorReceitaMacas = null;
 
         for (int i = 0; i < mercados.length; i++) {
 
@@ -44,7 +29,7 @@ public class Mercado1 {
 
         double menorReceitaLaranjas = Double.MAX_VALUE;
 
-        Mercado mercadoMenorReceitaLaranjas = null;
+        Exemplo mercadoMenorReceitaLaranjas = null;
 
         for (int i = 0; i < mercados.length; i++) {
 
@@ -62,7 +47,7 @@ public class Mercado1 {
 
         double segundaMaiorReceitaTotal = 0;
 
-        Mercado mercadoSegundaMaiorReceitaTotal = null;
+        Exemplo mercadoSegundaMaiorReceitaTotal = null;
 
         double maiorReceitaTotal = 0;
 
