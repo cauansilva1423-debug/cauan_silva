@@ -27,7 +27,7 @@ public class Contribuinte {
     }
 
     public void setCpf(String cpf) {
-        if (this.cpf == null || this.nome.isBlank()){
+        if (cpf == null || this.nome.isBlank()){
             System.out.println("Erro. CPF invalido");
         }else {
         this.cpf = cpf;}
@@ -37,7 +37,7 @@ public class Contribuinte {
     }
 
     public void setUf(String uf) {
-        if (this.uf == null || this.uf.isBlank()){
+        if (uf == null || this.uf.isBlank()){
             System.out.println("Erro. UF invalido");
         }else {
         this.uf = uf;}
@@ -47,7 +47,7 @@ public class Contribuinte {
     }
 
     public void setRendaAnual(double rendaAnual) {
-        if (this.rendaAnual <= 0){
+        if (rendaAnual <= 0){
             System.out.println("Erro. Renda invalido");
         }else {
             this.rendaAnual = rendaAnual;
