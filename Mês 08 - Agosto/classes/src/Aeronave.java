@@ -2,11 +2,11 @@ import java.security.PublicKey;
 
 public class Aeronave {
 
-    String Modelo;
-    Double Passageiro;
-    double VelecidadeMax;
-    double Combustivel;
-    double QueimaCom;
+     String Modelo;
+     Double Passageiro;
+     double VelecidadeMax;
+     double Combustivel;
+     double QueimaCom;
 
     @Override
     public String toString() {

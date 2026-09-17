@@ -8,6 +8,10 @@ public class Ex_7 {
 
         Aeronave A000[] = {A001, A002, A003,A004};
 
+
+
+
+
         Double DistaciaAR= 0.0;
         double TempoAR = 0.0;
         double MaisPassageiros = 0.0;
