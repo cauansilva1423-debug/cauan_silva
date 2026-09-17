@@ -16,10 +16,10 @@ public class Contribuinte {
     }
 
     public void setNome(String nome) {
-       if (this.nome == null || this.nome.isBlank()){
+       if (nome == null || nome.isBlank()){
            System.out.println("Erro. Nome invalido");
        }else {
-           this.nome = nome;
+           nome = nome;
        }
     }
     public String getCpf() {
@@ -27,20 +27,20 @@ public class Contribuinte {
     }
 
     public void setCpf(String cpf) {
-        if (cpf == null || this.nome.isBlank()){
+        if (cpf == null || cpf.isBlank()){
             System.out.println("Erro. CPF invalido");
         }else {
-        this.cpf = cpf;}
+        cpf = cpf;}
     }
     public String getUf() {
         return uf;
     }
 
     public void setUf(String uf) {
-        if (uf == null || this.uf.isBlank()){
+        if (uf == null || uf.isBlank()){
             System.out.println("Erro. UF invalido");
         }else {
-        this.uf = uf;}
+        uf = uf;}
     }
     public double getRendaAnual() {
         return rendaAnual;
