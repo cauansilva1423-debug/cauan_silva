@@ -91,7 +91,7 @@ public class Contribuinte {
         for (int i = 1; i < a0.length; i++) {
             soma += a0[i].rendaAnual;
         }
-        return soma/ a0.length;
+        return soma;
     }
 
     @Override
