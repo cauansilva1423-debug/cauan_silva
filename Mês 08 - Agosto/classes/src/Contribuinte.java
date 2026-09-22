@@ -4,6 +4,8 @@ public class Contribuinte {
     private String uf;
     private double rendaAnual;
 
+
+
     public String getNome() {
         return nome;
     }
@@ -46,11 +48,10 @@ public class Contribuinte {
             this.rendaAnual = rendaAnual;
         }
     }
-
-    public Contribuinte(String nome, String cpf, String uf, double rendaAnual) {
+    public Contribuinte(String nome, String CPF, String UF, double rendaAnual) {
         this.nome = nome;
-        this.cpf = cpf;
-        this.uf = uf;
+        this.cpf = CPF;
+        this.uf = UF;
         this.rendaAnual = rendaAnual;
     }
 
@@ -91,7 +92,7 @@ public class Contribuinte {
         for (int i = 1; i < a0.length; i++) {
             soma += a0[i].rendaAnual;
         }
-        return soma;
+        return soma/ a0.length;
     }
 
     @Override
