@@ -4,13 +4,6 @@ public class Contribuinte {
     private String uf;
     private double rendaAnual;
 
-    public Contribuinte(String nome, String CPF, String UF, double rendaAnual) {
-        this.nome = nome;
-        this.cpf = CPF;
-        this.uf = UF;
-        this.rendaAnual = rendaAnual;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -37,7 +30,7 @@ public class Contribuinte {
     }
 
     public void setUf(String uf) {
-        if (uf == null || uf.isBlank()){
+        if (uf == null || uf.isBlank() || uf.length() !=2){
             System.out.println("Erro. UF invalido");
         }else {
         uf = uf;}
@@ -52,6 +45,13 @@ public class Contribuinte {
         }else {
             this.rendaAnual = rendaAnual;
         }
+    }
+
+    public Contribuinte(String nome, String cpf, String uf, double rendaAnual) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.uf = uf;
+        this.rendaAnual = rendaAnual;
     }
 
     public double calcularAliquota() {
@@ -85,6 +85,13 @@ public class Contribuinte {
         }
 
         return maior;
+    }
+    public static Double mediaContribuentes(Contribuinte[] a0 ){
+        Double soma = 0.0;
+        for (int i = 1; i < a0.length; i++) {
+            soma += a0[i].rendaAnual;
+        }
+        return soma/ a0.length;
     }
 
     @Override

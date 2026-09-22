@@ -10,9 +10,11 @@ public class Ex_8 {
 
         Contribuinte a0[] = {a1, a2, a3, a4, a5};
         Contribuinte maior = Contribuinte.quemPagaMais(a0);
+        Double media = Contribuinte.mediaContribuentes(a0);
 
         System.out.println("Quem mais paga imposto: " + maior.getNome());
         System.out.println("Imposto: R$ " + maior.calcularImposto());
+        System.out.println("A media dos Impostos são R$"+ media);
 
     }
 }
