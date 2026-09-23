@@ -4,7 +4,12 @@ public class Contribuinte {
     private String uf;
     private double rendaAnual;
 
-
+    public Contribuinte(String nome, String CPF, String UF, double rendaAnual) {
+        this.nome = nome;
+        this.cpf = CPF;
+        this.uf = UF;
+        this.rendaAnual = rendaAnual;
+    }
 
     public String getNome() {
         return nome;
@@ -12,9 +17,9 @@ public class Contribuinte {
 
     public void setNome(String nome) {
        if (nome == null || nome.isBlank()){
-           System.out.println("Erro. Nome invalido");
+           throw new IllegalArgumentException("Nome invalido");
        }else {
-           nome = nome;
+           this.nome = nome;
        }
     }
     public String getCpf() {
@@ -23,9 +28,9 @@ public class Contribuinte {
 
     public void setCpf(String cpf) {
         if (cpf == null || cpf.isBlank()){
-            System.out.println("Erro. CPF invalido");
+            throw new IllegalArgumentException("CPF invalido");
         }else {
-        cpf = cpf;}
+        this.cpf = cpf;}
     }
     public String getUf() {
         return uf;
@@ -33,9 +38,9 @@ public class Contribuinte {
 
     public void setUf(String uf) {
         if (uf == null || uf.isBlank() || uf.length() !=2){
-            System.out.println("Erro. UF invalido");
+            throw new IllegalArgumentException("UF invalido");
         }else {
-        uf = uf;}
+        this.uf = uf;}
     }
     public double getRendaAnual() {
         return rendaAnual;
@@ -43,17 +48,12 @@ public class Contribuinte {
 
     public void setRendaAnual(double rendaAnual) {
         if (rendaAnual <= 0){
-            System.out.println("Erro. Renda invalido");
+            throw new IllegalArgumentException("Renda anual invalida invalido");
         }else {
             this.rendaAnual = rendaAnual;
         }
     }
-    public Contribuinte(String nome, String CPF, String UF, double rendaAnual) {
-        this.nome = nome;
-        this.cpf = CPF;
-        this.uf = UF;
-        this.rendaAnual = rendaAnual;
-    }
+
 
     public double calcularAliquota() {
 
