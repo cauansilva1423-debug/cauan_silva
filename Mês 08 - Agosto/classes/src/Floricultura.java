@@ -5,13 +5,9 @@ public class Floricultura {
 
     private List<Flor> flor;
 
-    public Floricultura(){
-       flor = new ArrayList<Flor>();
-    }
+    public Floricultura(){flor = new ArrayList<Flor>();}
 
-    public void adicionarFlor(Flor f){
-        flor.add(f);
-    }
+    public void adicionarFlor(Flor f){flor.add(f);}
 
     public List<Flor> obterListaCliente(String nome) {
         List<Flor> floresPorCliente = new ArrayList<>();
@@ -24,7 +20,4 @@ public class Floricultura {
         return floresPorCliente;
 
     }
-
-
-
 }

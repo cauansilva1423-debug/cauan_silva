@@ -11,7 +11,6 @@ public class atv2 {
 
         f1.adicionarFlor(a1); f1.adicionarFlor(a2); f1.adicionarFlor(a3); f1.adicionarFlor(a4); f1.adicionarFlor(a5);
 
-
         System.out.println(f1.obterListaCliente("Flaviane"));
 
     }
