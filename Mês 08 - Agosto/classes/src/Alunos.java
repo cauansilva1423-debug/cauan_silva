@@ -61,7 +61,7 @@ public class Alunos {
     }
 
     public void setMediaFinal(double mediaFinal) {
-        if (mediaFinal > 0){
+        if (mediaFinal < 0){
             throw new IllegalArgumentException("Media Invalida");}
         this.mediaFinal = mediaFinal;
     }
