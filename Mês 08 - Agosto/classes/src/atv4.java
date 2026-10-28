@@ -14,7 +14,7 @@ public class atv4 {
         produto.adicionarProduto(p4);
         produto.adicionarProduto(p5);
 
-        p1.adicionarAoEstoque(20);
+        p1.adicionarAoEstoque(20); 
         p2.venderProduto(10);
 
         System.out.println(produto.obterProdutoMaisCaro());
@@ -22,7 +22,5 @@ public class atv4 {
         System.out.println(produto.filtrarProduto( 90.00, 300.00) );
 
         System.out.println(p1);
-
-
     }
 }

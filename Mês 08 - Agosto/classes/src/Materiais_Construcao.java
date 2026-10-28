@@ -15,7 +15,6 @@ public class Materiais_Construcao {
         for (Produto p : produtos){
             if (p.getPreço() > maior.getPreço()){
                 maior = p;
-
             }
         }return maior;
     }
