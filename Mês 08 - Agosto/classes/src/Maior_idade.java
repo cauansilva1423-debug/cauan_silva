@@ -33,7 +33,7 @@ public class Maior_idade {
 
         if (idadeCauan >= 18){
             System.out.println("Cauan é de maior");
-        }else {
+        } else {
             System.out.println("Cauan é de menor");
         }
     }
